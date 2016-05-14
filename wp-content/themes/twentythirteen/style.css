@@ -3267,3 +3267,20 @@ footer.entry-meta {
 	background-color: #9D1920;
 	float: right;
 }
+
+/* sticky footer */
+
+html, body, .hfeed.site {
+  height: 100%;
+}
+.site-main {
+  min-height: calc(100% - 45px);
+  margin-bottom: -82px;
+}
+.site-main:after {
+  content: "";
+  display: block;
+}
+.site-footer, .site-main:after {
+  height: 82px;
+}
