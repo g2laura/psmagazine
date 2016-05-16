@@ -147,7 +147,7 @@ h6 {
 }
 
 h1 {
-	font-size: 48px;
+	font-size: 40px;
 	margin: 33px 0;
 }
 
@@ -1035,8 +1035,9 @@ ul.nav-menu .focus > ul,
 }
 
 .entry-title {
-	font-weight: normal;
+	font-weight: bold;
 	margin: 0 0 5px;
+	color: #9D1920;
 }
 
 .entry-title a {
@@ -2561,7 +2562,7 @@ footer.entry-meta {
 
 .site-footer {
 	background-color: white;
-	color: #333333;
+	color: #6F6F6F;
 	font-size: 14px;
 	text-align: center;
 }
@@ -3261,6 +3262,8 @@ footer.entry-meta {
 .magazine-logo {
 	position: absolute;
 	left: -100px;
+	cursor: pointer;
+	z-index: 100;
 }
 
 .magazine-logo img {
@@ -3289,4 +3292,12 @@ html, body, .hfeed.site {
 }
 .site-footer, .site-main:after {
   height: 82px;
+}
+
+/* Remove issuu media kit bottom text */
+.issuuembed.issuu-isrendered {
+  width: 1040px !important;
+}
+.issuuembed.issuu-isrendered span {
+	display: none;
 }

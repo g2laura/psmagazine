@@ -41,7 +41,9 @@
 			</a>
 			<div id="navbar" class="navbar">
 				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
-					<div class="magazine-logo"><img src="<?php echo get_bloginfo('template_url') ?>/images/psmagazine-logo.jpg"/></div>
+					<div class="magazine-logo" onclick="location.href='<?php echo esc_url( home_url( '/' ) ); ?>'">
+						<img src="<?php echo get_bloginfo('template_url') ?>/images/psmagazine-logo.jpg"/>
+					</div>
 					<button class="menu-toggle"><?php _e( 'Menu', 'twentythirteen' ); ?></button>
 					<a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentythirteen' ); ?>"><?php _e( 'Skip to content', 'twentythirteen' ); ?></a>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'menu_id' => 'primary-menu' ) ); ?>
