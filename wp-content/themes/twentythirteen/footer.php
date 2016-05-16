@@ -15,7 +15,7 @@
 			<?php get_sidebar( 'main' ); ?>
 
 			<div class="site-info">
-				<span>© 2016 PS Magazine</span>
+				<span>(c) 2016 PS Lifestyle LLC. All rights reserved. Reproduction without permission is prohibited.</span>
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
