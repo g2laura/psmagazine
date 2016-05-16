@@ -1,0 +1,67 @@
+/*Styles sheet to control the layout of the magazine display by the plugin
+*/
+#magazine_display {
+  max-width: 1040px;
+  overflow: hidden;
+}
+
+div.magazine_item {
+  /*border: 1px solid #CCCCCC;*/
+  display: inline-block;
+  margin: 10px;
+  width: 30%;
+  min-height: auto;
+  position: relative;
+  vertical-align: top;
+  color:#78756e;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+div.magazine_item > a > img {
+    width: 100%;    
+	vertical-align: top;
+}
+
+
+
+div.magazine_info {
+position: absolute;
+bottom: 0px;
+width: 100%;
+word-break: break-word;
+}
+
+span.magazine_title {
+    text-align: center;
+}
+
+.magazine_info > span {
+    font-size: 16px;
+    text-decoration: none;
+    color: #78756E;
+}
+
+.magazine_item a, .magazine_item a:hover {
+  text-decoration: none !important;
+}
+
+.magazine_item .issuu_doc_title {
+	font-weight:normal;
+  padding: 10px;
+}
+
+
+.magazine_item .issuu_doc_title, .magazine_item .issuu_doc_publish_date {
+	position:relative;
+	top:0px;
+	color: #78756e;
+}
+
+.hover img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover :hover img {
+	opacity: .5;
+}
