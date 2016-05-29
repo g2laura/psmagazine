@@ -148,7 +148,8 @@ h6 {
 
 h1 {
 	font-size: 36px;
-	margin: 33px 0;
+	margin: 0;
+	line-height: 40px;
 }
 
 h2 {
@@ -1031,7 +1032,8 @@ ul.nav-menu .focus > ul,
 }
 
 .entry-header {
-	margin-bottom: 30px;
+	margin-bottom: 10px;
+	padding-top: 15px;
 }
 
 .entry-title {
@@ -1100,7 +1102,8 @@ ul.nav-menu .focus > ul,
 .categories-links a {
 	color: black;
 	text-transform: uppercase;
-	font-size: 24px;
+	font-size: 18px;
+	font-weight: bold;
 }
 
 .categories-links a:hover {
@@ -1140,6 +1143,10 @@ ul.nav-menu .focus > ul,
 	-ms-hyphens:     auto;
 	hyphens:         auto;
 	word-wrap: break-word;
+}
+
+.entry-content img:first-child, .entry-content img:last-child  {
+	width: 100%;
 }
 
 .entry-content a,
@@ -3273,7 +3280,7 @@ footer.entry-meta {
 }
 
 .magazine-logo img {
-	width: 100px;
+	width: 105px;
 }
 
 /* subscribe button */
@@ -3316,6 +3323,7 @@ html, body, .hfeed.site {
   max-width: 1040px;
   width: 100%;
   padding: 60px 0 0 0;
+  font-size: 14px;
 }
 
 #breadcrumbs li{
@@ -3335,12 +3343,12 @@ html, body, .hfeed.site {
 }
 
 #breadcrumbs .separator{
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 100;
   color: #707070;
 }
 
 .vcard {
 	color: #707070;
-	font-size: 24px;
+	font-size: 18px;
 }
