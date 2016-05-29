@@ -18,6 +18,13 @@
 		</div>
 		<?php endif; ?>
 
+		<!-- Category -->
+		<?php $categories_list = get_the_category_list( __( ', ', 'twentythirteen' ) );
+			if ( $categories_list ) {
+				echo '<span class="categories-links">' . $categories_list . '</span>';
+			}
+		?>
+
 		<?php if ( is_single() ) : ?>
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 		<?php else : ?>
@@ -26,9 +33,17 @@
 		</h1>
 		<?php endif; // is_single() ?>
 
+    <!-- Author -->
+		<?php
+			if ( 'post' == get_post_type() ) {
+				printf( '<span class="author vcard">by %1$s</span>',
+					get_the_author()
+				);
+			}
+		?>
 		<div class="entry-meta">
-			<?php twentythirteen_entry_meta(); ?>
-			<?php edit_post_link( __( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
+			<?php //twentythirteen_entry_meta(); ?>
+			<?php //edit_post_link( __( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
@@ -51,12 +66,6 @@
 	<?php endif; ?>
 
 	<footer class="entry-meta">
-		<?php if ( comments_open() && ! is_single() ) : ?>
-			<div class="comments-link">
-				<?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a comment', 'twentythirteen' ) . '</span>', __( 'One comment so far', 'twentythirteen' ), __( 'View all % comments', 'twentythirteen' ) ); ?>
-			</div><!-- .comments-link -->
-		<?php endif; // comments_open() ?>
-
 		<?php if ( is_single() && get_the_author_meta( 'description' ) && is_multi_author() ) : ?>
 			<?php get_template_part( 'author-bio' ); ?>
 		<?php endif; ?>
