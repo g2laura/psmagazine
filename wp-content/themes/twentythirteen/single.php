@@ -16,6 +16,12 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php custom_breadcrumbs(); ?>
 				<?php get_template_part( 'content', get_post_format() ); ?>
+				<?php
+					$tag_list = get_the_tag_list( '', __( ' ', 'twentythirteen' ) );
+					if ( $tag_list ) {
+						echo '<div class="tags"><b>Tags: </b><span class="tags-links">' . $tag_list . '</span></div>';
+					}
+				?>
 				<?php twentythirteen_post_nav(); ?>
 
 			<?php endwhile; ?>

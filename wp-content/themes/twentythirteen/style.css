@@ -3316,7 +3316,7 @@ html, body, .hfeed.site {
 }
 
 /* Breadcrumbs */
-#breadcrumbs{
+#breadcrumbs {
   list-style: none;
   overflow: hidden;
   margin: 0 auto;
@@ -3326,7 +3326,7 @@ html, body, .hfeed.site {
   font-size: 14px;
 }
 
-#breadcrumbs li{
+#breadcrumbs li {
   display: inline-block;
   vertical-align: middle;
   margin-right: 5px;
@@ -3342,13 +3342,37 @@ html, body, .hfeed.site {
 	color: #9f171b;
 }
 
-#breadcrumbs .separator{
+#breadcrumbs .separator {
   font-size: 15px;
   font-weight: 100;
   color: #707070;
 }
 
+/* Author */
 .vcard {
 	color: #707070;
 	font-size: 18px;
+}
+
+/* Tags */
+.tags {
+  margin: 0 auto;
+  max-width: 1040px;
+  width: 100%;
+  border-bottom: 1px solid #333;
+	padding-bottom: 25px;
+}
+
+.tags .tags-links {
+	margin-left: 5px;
+}
+
+.tags .tags-links a, .tags .tags-links a:visited, .tags .tags-links a:hover {
+	color: #707070;
+	text-decoration: underline;
+	margin-right: 5px;
+}
+
+.tags-links a:first-child:before {
+	display: none;
 }
