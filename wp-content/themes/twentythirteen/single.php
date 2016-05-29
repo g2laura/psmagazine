@@ -22,8 +22,7 @@ get_header(); ?>
 						echo '<div class="tags"><b>Tags: </b><span class="tags-links">' . $tag_list . '</span></div>';
 					}
 				?>
-				<?php twentythirteen_post_nav(); ?>
-
+				<?php echo do_shortcode( '[AuthorRecommendedPosts]' ); ?>
 			<?php endwhile; ?>
 
 		</div><!-- #content -->

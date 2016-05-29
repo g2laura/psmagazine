@@ -160,6 +160,8 @@ h2 {
 h3 {
 	font-size: 22px;
 	margin: 22px 0;
+	color: #9f171b;
+	font-weight: bold;
 }
 
 h4 {
@@ -3374,5 +3376,44 @@ html, body, .hfeed.site {
 }
 
 .tags-links a:first-child:before {
+	display: none;
+}
+
+/* recommended posts overrides */
+.entry-content .author-recommended-posts {
+	display: none;
+}
+
+.author-recommended-posts {
+	margin: 0 auto !important;
+  max-width: 1040px;
+  width: 100%;
+}
+
+.author-recommended-posts.horizontal .related-thumbnail {
+	width: 100% !important;
+}
+
+.author-recommended-posts.horizontal li.has-thumbnail .related-title {
+	width: 100% !important;
+	float: none !important;
+	text-align: left;
+	font-size: 22px;
+	color: #9f171b;
+  font-weight: bold;
+  clear: both;
+  padding: 20px 0;
+}
+
+.author-recommended-posts.horizontal .related-thumbnail {
+	min-height: 250px;
+}
+
+.author-recommended-posts.horizontal ol li:first-child, .author-recommended-posts.horizontal ol li:nth-child(2) {
+	padding-right: 15px;
+}
+
+/* Post thumbnail override */
+.post .entry-thumbnail {
 	display: none;
 }
