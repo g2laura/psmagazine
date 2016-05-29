@@ -147,9 +147,9 @@ h6 {
 }
 
 h1 {
-	font-size: 36px;
+	font-size: 30px;
 	margin: 0;
-	line-height: 40px;
+	line-height: 35px;
 }
 
 h2 {
@@ -1038,7 +1038,7 @@ ul.nav-menu .focus > ul,
 
 .entry-title {
 	font-weight: bold;
-	margin: 0 0 5px;
+	margin: 0;
 	color: #9f171b;
 }
 
@@ -3351,7 +3351,7 @@ html, body, .hfeed.site {
 /* Author */
 .vcard {
 	color: #707070;
-	font-size: 18px;
+	font-size: 17px;
 }
 
 /* Tags */
