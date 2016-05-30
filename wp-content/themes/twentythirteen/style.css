@@ -2471,14 +2471,12 @@ footer.entry-meta {
  */
 
 .widget {
-	background-color: rgba(247, 245, 231, 0.7);
 	font-size: 14px;
 	-webkit-hyphens: auto;
 	-moz-hyphens:    auto;
 	-ms-hyphens:     auto;
 	hyphens:         auto;
 	margin: 0 0 24px;
-	padding: 20px;
 	word-wrap: break-word;
 }
 
@@ -3416,4 +3414,35 @@ html, body, .hfeed.site {
 /* Post thumbnail override */
 .post .entry-thumbnail {
 	display: none;
+}
+
+/* Advertising in post */
+.advertising-in-post {
+	max-width: 300px;
+	float: right;
+	margin-left: 25px;
+}
+
+.advertising-in-post aside:not(:last-child) {
+	margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #707070;
+}
+
+.advertising-in-post aside:last-child {
+  margin-bottom: 20px;
+}
+
+/* homepage */
+
+.home #page .entry-header {
+	width: 100%;
+  max-width: 100%;
+  max-height: 450px;
+  overflow: hidden;
+  padding-top: 0;
+}
+
+.home #page .entry-header .entry-thumbnail, .home #page .entry-header .entry-thumbnail img {
+	width: 100%;
 }
